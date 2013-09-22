@@ -4,7 +4,7 @@
 
 This project automates the setup of a development environment for general Ruby on Rails application development. 
 
-Inspired by the book ["Deploying Rails"](http://pragprog.com/book/cbdepra/deploying-rails) and fxn's [rails-dev-box](https://github.com/rails/rails-dev-box)
+Inspired by the book ["Deploying Rails"](http://pragprog.com/book/cbdepra/deploying-rails) and fxn's [rails-dev-box](https://github.com/rails/rails-dev-box). Forked from https://github.com/jasonk47/rails-starter-box, which in turn was forked from https://github.com/amaia/rails-starter-box
 
 ## Requirements
 
