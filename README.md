@@ -37,7 +37,7 @@ Port 3000 in the host computer is forwarded to port 3000 in the virtual machine.
 
 * SQLite3, MySQL, and Postgres
 
-* RVM (with ruby 1.9.3 and 1.8.7 installed)
+* RVM (with ruby 1.9.3-p194 and 2.0.0-p247 installed)
 
 * Bundler, Rails and Rake gems for both rubies
 
