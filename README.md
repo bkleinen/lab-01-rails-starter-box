@@ -66,13 +66,14 @@ The recommended workflow is
 
 start the project in the virtual machine
 
-    cd /Vagrant
+    cd /vagrant
     rails new my-new-project
     cd my-new-project
+    git init
     
 use rails, rake, rails console, git in the virtual machine
 
-    cd /Vagrant/my-new-project
+    cd /vagrant/my-new-project
     rails generate scaffold thing name
     git add .
     git commit -m 'scaffold for things'
@@ -84,7 +85,7 @@ edit files in the host computer
 
 run within the virtual machine
 
-    cd /Vagrant/my-new-project
+    cd /vagrant/my-new-project
     rails server
 
 use your browsers on the host machine
