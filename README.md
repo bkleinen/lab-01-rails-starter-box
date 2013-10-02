@@ -46,16 +46,17 @@ edit the files.
 
 * Bundler, Rails and Rake gems for both rubies
 
-## actually, you can get rid of the repository now
+## You can get rid of the Repository now
 
-If your machine is up and running you don'r really need
-the git repository any more.  you can do a 
+If your virtual machine is up and running you don't really need
+this git repository any more.  you can do a 
 
     cd rails-starter-box
-	rm -rf .git
+	rm -rf .git*
 	
-to get rid of the repository. This will make it easier
-for you to create your own repositories for your own rails projects
+to get rid of the repository, and .gitignore and .gitmodules. 
+
+This will make it easier to create your own repositories for your own rails projects
 inside the box.
     
 
