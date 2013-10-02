@@ -30,6 +30,10 @@ package { ['libmagickwand4', 'libmagickwand-dev']:
 ensure => installed,
 }
 
+# commandlinetools
+package { "screen":  ensure => "installed" }
+
+
 class install_mysql {
   class { 'mysql': }
 

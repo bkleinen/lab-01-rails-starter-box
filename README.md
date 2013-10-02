@@ -51,30 +51,30 @@ edit the files.
 
 The recommended workflow is
 
-* start the project in the virtual machine
+start the project in the virtual machine
 
     cd /Vagrant
     rails new my-new-project
     cd my-new-project
     
-* use rails, rake, rails console, git in the virtual machine
+use rails, rake, rails console, git in the virtual machine
 
     cd /Vagrant/my-new-project
     rails generate scaffold thing name
     git add .
     git commit -m 'scaffold for things'
 
-* edit files in the host computer
+edit files in the host computer
 
     Point your IDE to ....rails-starter-box/my-new-project
     edit app/model/thing.rb 
 
-* run within the virtual machine
+run within the virtual machine
 
     cd /Vagrant/my-new-project
     rails server
 
-* use your browsers on the host machine
+use your browsers on the host machine
 
     point them to http://localhost:3000/
     

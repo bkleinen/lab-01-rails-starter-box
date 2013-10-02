@@ -5,9 +5,12 @@ Vagrant.configure("2") do |config|
 
   config.vm.network "forwarded_port", guest:3000, host:3000
 
-  config.vm.provision :puppet,
-    :manifests_path => 'puppet/manifests',
-    :module_path    => 'puppet/modules'
+  config.vm.provision :puppet do |puppet|
+    puppet.manifests_path = 'puppet/manifests'
+	puppet.manifest_file = 'default.pp'
+    puppet.module_path   = 'puppet/modules'
+	puppet.options = "--verbose --debug"
+  end
 
 
   config.vm.provider "virtualbox" do |vb|
