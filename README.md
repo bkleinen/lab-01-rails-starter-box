@@ -69,28 +69,41 @@ start the project in the virtual machine
     cd /vagrant
     rails new my-new-project
     cd my-new-project
-    git init
-    
-use rails, rake, rails console, git in the virtual machine
 
-    cd /vagrant/my-new-project
+you can now use rails, rake, rails console, git in the virtual machine
+
+Bonus round: the standard Gemfile created by "rails new" has
+the rubyracer commented out.  find it, remove the comment.
+
+A few more steps to get rails up and running.
+
+    bundle install
+    rake db:migrate
+    git init
+    git add .
+    git commit -m 'empty rails app'    
+    rails server
+    
+a webserver is now running in your virtual machine.
+the port it is running on (3000) is connected to port 3000 on
+your host machine, so you can use  your browsers on the host machine to look at it:
+
+    http://localhost:3000/    
+
+Inside the virtual machine you can  use the commanline tools rails, rake, rails console, git.
+For example use rails to generate your first model, view and controller like so:
+
     rails generate scaffold thing name
     git add .
     git commit -m 'scaffold for things'
 
-edit files in the host computer
+You can edit the files that were created in the host computer,
+with your normal IDE.
 
     Point your IDE to ....rails-starter-box/my-new-project
     edit app/model/thing.rb 
 
-run within the virtual machine
 
-    cd /vagrant/my-new-project
-    rails server
-
-use your browsers on the host machine
-
-    point them to http://localhost:3000/
     
     
 
