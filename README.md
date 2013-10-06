@@ -97,6 +97,10 @@ First, you should initialize a git repository and commit the newly created app:
     git add .
     git commit -m 'empty rails app'
 
+
+=======
+Inside the virtual machine you can  use the commandline tools rails, rake, rails console, git.
+
 For example use rails to generate your first model, view and controller like so:
 
     rails generate scaffold thing name
