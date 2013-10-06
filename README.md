@@ -97,8 +97,6 @@ First, you should initialize a git repository and commit the newly created app:
     git add .
     git commit -m 'empty rails app'
 
-
-=======
 Inside the virtual machine you can  use the commandline tools rails, rake, rails console, git.
 
 For example use rails to generate your first model, view and controller like so:
@@ -146,6 +144,9 @@ You can find out the state of a virtual machine anytime by invoking
 Finally, to completely wipe the virtual machine from the disk **destroying all its contents**:
 
     host $ vagrant destroy # DANGER: all is gone
+
+Please check the [Vagrant documentation](http://docs.vagrantup.com/v2/) for more information on Vagrant.
+
 
 Please check the [Vagrant documentation](http://docs.vagrantup.com/v2/) for more information on Vagrant.
 
