@@ -32,7 +32,7 @@ If the base box is not present that command fetches it first.
 Port 3000 in the host computer is forwarded to port 3000 in the virtual machine. 
 Thus, applications running in the virtual machine can be accessed via localhost:3000 in the host computer.
 
-The directory rails-starter-box is also available inside the box as /Vagrant.
+The directory rails-starter-box is also available inside the box as /vagrant.
 Start your rails projects there, and you will be able to use you windows IDE to
 edit the files.
 
@@ -90,7 +90,7 @@ your host machine, so you can use  your browsers on the host machine to look at 
 
     http://localhost:3000/    
 
-Inside the virtual machine you can  use the commanline tools rails, rake, rails console, git.
+Inside the virtual machine you can  use the commandline tools rails, rake, rails console, git.
 For example use rails to generate your first model, view and controller like so:
 
     rails generate scaffold thing name
