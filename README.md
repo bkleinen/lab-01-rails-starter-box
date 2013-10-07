@@ -4,6 +4,10 @@
 
 This project automates the setup of a development environment for general Ruby on Rails application development.
 
+
+Forked from [Bjelli's Starter Box](https://github.com/web-engineering/rails-starter-box) with many thanks for the suggestion!
+
+Which was in turn...
 Inspired by the book ["Deploying Rails"](http://pragprog.com/book/cbdepra/deploying-rails) and fxn's [rails-dev-box](https://github.com/rails/rails-dev-box). Forked from https://github.com/jasonk47/rails-starter-box, which in turn was forked from https://github.com/amaia/rails-starter-box
 
 ## Requirements
@@ -16,7 +20,7 @@ Inspired by the book ["Deploying Rails"](http://pragprog.com/book/cbdepra/deploy
 
 Building the virtual machine is this easy:
 
-    host $ git clone https://github.com/web-engineering/rails-starter-box.git
+    host $ git clone https://github.com/info3/rails-starter-box.git
     host $ cd rails-starter-box
     host $ git submodule init
     host $ git submodule update
