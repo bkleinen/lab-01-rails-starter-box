@@ -72,33 +72,33 @@ class install-rvm {
   rvm::system_user { vagrant: ; }
 
   rvm_system_ruby {
-    'ruby-2.0.0-p247':
+    'ruby-1.9.3-p353':
       ensure => 'present',
       default_use => true;
-    'ruby-1.9.3-p194':
+    'ruby-1.9.3-p484':
       ensure => 'present',
       default_use => false;
   }
 
   rvm_gem {
-    'ruby-2.0.0-p247/bundler':
+    'ruby-1.9.3-p353/bundler':
       ensure => latest,
-      require => Rvm_system_ruby['ruby-2.0.0-p247'];
-    'ruby-2.0.0-p247/rails':
+      require => Rvm_system_ruby['ruby-1.9.3-p353'];
+    'ruby-1.9.3-p353/rails':
       ensure => latest,
-      require => Rvm_system_ruby['ruby-2.0.0-p247'];
-    'ruby-2.0.0-p247/rake':
+      require => Rvm_system_ruby['ruby-1.9.3-p353'];
+    'ruby-1.9.3-p353/rake':
       ensure => latest,
-      require => Rvm_system_ruby['ruby-2.0.0-p247'];
-    'ruby-1.9.3-p194/bundler':
+      require => Rvm_system_ruby['ruby-1.9.3-p353'];
+    'ruby-1.9.3-p484/bundler':
       ensure => latest,
-      require => Rvm_system_ruby['ruby-1.9.3-p194'];
-    'ruby-1.9.3-p194/rails':
+      require => Rvm_system_ruby['ruby-1.9.3-p484'];
+    'ruby-1.9.3-p484/rails':
       ensure => latest,
-      require => Rvm_system_ruby['ruby-1.9.3-p194'];
-    'ruby-1.9.3-p194/rake':
+      require => Rvm_system_ruby['ruby-1.9.3-p484'];
+    'ruby-1.9.3-p484/rake':
       ensure => latest,
-      require => Rvm_system_ruby['ruby-1.9.3-p194'];
+      require => Rvm_system_ruby['ruby-1.9.3-p484'];
   }
 
 }
