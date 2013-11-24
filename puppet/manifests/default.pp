@@ -72,7 +72,7 @@ class install-rvm {
   rvm::system_user { vagrant: ; }
 
   rvm_system_ruby {
-    'ruby-1.9.3-p353':
+    'ruby-2.0.0-p353':
       ensure => 'present',
       default_use => true;
     'ruby-1.9.3-p484':
@@ -81,15 +81,15 @@ class install-rvm {
   }
 
   rvm_gem {
-    'ruby-1.9.3-p353/bundler':
+    'ruby-2.0.0-p353/bundler':
       ensure => latest,
-      require => Rvm_system_ruby['ruby-1.9.3-p353'];
-    'ruby-1.9.3-p353/rails':
+      require => Rvm_system_ruby['ruby-2.0.0-p353'];
+    'ruby-2.0.0-p353/rails':
       ensure => latest,
-      require => Rvm_system_ruby['ruby-1.9.3-p353'];
-    'ruby-1.9.3-p353/rake':
+      require => Rvm_system_ruby['ruby-2.0.0-p353'];
+    'ruby-2.0.0-p353/rake':
       ensure => latest,
-      require => Rvm_system_ruby['ruby-1.9.3-p353'];
+      require => Rvm_system_ruby['ruby-2.0.0-p353'];
     'ruby-1.9.3-p484/bundler':
       ensure => latest,
       require => Rvm_system_ruby['ruby-1.9.3-p484'];
