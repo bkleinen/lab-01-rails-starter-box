@@ -6,4 +6,4 @@
 	url = git://github.com/akumria/puppet-postgresql.git
 [submodule "puppet/modules/rvm"]
 	path = puppet/modules/rvm
-	url = git://github.com/smallspark/puppet-rvm.git
+	file = /Users/kleinen/mine/code/info3/others/puppet-rvm
